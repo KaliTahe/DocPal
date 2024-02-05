@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
+  }
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+/*header*/
+.navbar {
+    background-color: #7ad3be;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    color: #006d46 !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #006d46 !important;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link:hover {
+    color: black !important; 
+}
+
+.btn-outline-primary {
+    background-color: #7ad3be !important; 
+    color: white !important;
+    border-color: #7ad3be !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: white !important;
+    color: black !important;
+}
+.navbar-nav .nav-item .nav-link0 {
+    color: black !important;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+
+/*Estilo contenedor*/
+.contenedor-flex {
+    display: flex;
+    align-items:center;
+}
+
+.contenedor-flex img {
+    width: 25%; 
+    margin-right: 20px; 
+}
+
+.contenido-texto {
+    width: 66.66%; 
+}
+@media screen and (max-width: 768px) {
+    .contenedor-flex {
+        flex-direction: column; 
+    }
+
+    .contenedor-flex iframe {
+        width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+}
+/*formato h2*/
+h2{
+    color: #006d46 !important;
+    font-weight: bold !important;
+}
+
+h3, h5{
+    color: #006d46 !important;
+}
+
+
+/* Join DocPal */
+.joindocpal {
+    margin-top: 10px; 
+}
+
+.contenedor-flexjoin {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; 
+}
+
+.contenedor-flexjoin iframe {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.contenido-textojoin {
+    flex: 1; 
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor-flexjoin {
+        flex-direction: column; 
+    }
+
+    .contenedor-flexjoin iframe {
+        width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+}
+
