@@ -1,0 +1,9 @@
+// Estilos de los títulos
+h2{
+    color: map-get($colors, headers) !important;
+    font-weight: bold !important;
+}
+
+h3{
+    color: map-get($colors, headers) !important;
+}

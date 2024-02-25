@@ -1,0 +1,45 @@
+@import './appends/variables';
+@import './appends/join';
+@import './appends/mixin';
+@import './appends/estiloh';
+@import './appends/header';
+
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.contenedor-flex {
+    display: flex;
+    width: 100%;
+
+    .imagen_au {
+        width: 20%; 
+        display: flex; 
+        flex-direction: column;
+
+        h2,
+        img {
+            width: 100%;
+            max-height: 500px;
+        }
+    }
+
+    .contenido-texto {
+        width: 80%;
+        padding: 0 20px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column;
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column; 
+
+        iframe {
+            width: 100%; 
+            margin-right: 0; 
+            margin-bottom: 10px; 
+        }
+    }
+}

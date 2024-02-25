@@ -1,0 +1,26 @@
+@import './appends/variables';
+@import './appends/join';
+@import './appends/mixin';
+@import './appends/estiloh';
+@import './appends/header';
+
+.contenedor {
+    margin-top: 20px;
+    section {
+        .col-md-6, .col-lg-4 {
+            h6 {
+                color: map-get($colors, headers) !important; 
+            }
+        }
+    }
+}
+
+h2{
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+.joindocpal{
+    border-top:  5px solid map-get($colors, background);
+}

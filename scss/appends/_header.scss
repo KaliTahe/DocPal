@@ -1,0 +1,37 @@
+.navbar {
+    background-color: map-get($colors, background);
+    
+    &-nav {
+        margin-left: auto;
+        margin-right: 20px;
+        .navbar-brand {
+            color: map-get($colors, headers) !important;
+            font-weight: bold;
+        }
+        
+        .nav-link {
+            @extend .navbar-brand;
+            text-decoration: underline;
+            
+            &:hover {
+                color: map-get($colors, black) !important;
+            }
+        }
+        .nav-link0{
+            font-weight: bold !important;
+        }
+    }
+}
+
+
+// Estilos de los botones
+.btn-outline-primary {
+    background-color: map-get($colors, boton) !important; 
+    color: map-get($colors, white) !important;
+    border-color: map-get($colors, boton) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: map-get($colors, white) !important;
+    color: map-get($colors, black) !important;
+}

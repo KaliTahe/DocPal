@@ -1,0 +1,29 @@
+.joindocpal {
+    margin-top: 10px; 
+    
+}
+
+.contenedor-flexjoin {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; 
+
+    iframe {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .contenido-textojoin {
+        flex: 1; 
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column; 
+
+        iframe {
+            width: 100%; 
+            margin-right: 0; 
+            margin-bottom: 10px; 
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import './appends/variables';
+@import './appends/join';
+@import './appends/mixin';
+@import './appends/estiloh';
+@import './appends/header';
+
+
+.imagecontainer {
+    display: flex;
+    background-color: map-get($colors, background );
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 60px;
+    
+    img {
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+  }
+
+.contenedor-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5px;
+    
+  
+    .descripcion {
+      margin-top: 20px;
+      
+      ul {
+        padding-left: 20px;
+        text-align: center;
+        list-style-type: none;
+      }
+    }
+  }
+  
+  
+
+
+
+
+.joindocpal{
+    border-top:  5px solid map-get($colors, background);
+}
