@@ -11,6 +11,8 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .contenedor-flexjoin iframe {
   width: 50%;
@@ -19,6 +21,46 @@ body, html {
 .contenedor-flexjoin .contenido-textojoin {
   flex: 1;
 }
+
+.contenedor-flexjoin .contenido-textojoin  p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+.card-group{
+  animation-duration: 3s;
+  animation-name: wipe-in-down;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes wipe-in-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:down"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .contenedor-flexjoin {
     flex-direction: column;

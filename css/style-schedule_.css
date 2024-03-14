@@ -11,6 +11,8 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .contenedor-flexjoin iframe {
   width: 50%;
@@ -82,6 +84,26 @@ h3 {
 .contenedor-flex .contenido-texto {
   width: 66.66%;
 }
+
+.contenedor-flexjoin .contenido-textojoin  p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .contenedor-flex {
     flex-direction: column;

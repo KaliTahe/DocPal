@@ -7,6 +7,7 @@
 
 // Estilos del contenedor flexible
 .contenedor-flex {
+    padding: 20px; // Agrega espacio alrededor del contenedor
     display: flex;
     align-items: center;
 
@@ -38,9 +39,11 @@
         bottom: 0;
         top: 10px;
     }
+    padding-left: 20px;
 }
 
 .services {
+    padding: 20px; // Agrega espacio alrededor del contenedor de servicios
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto auto); 

@@ -11,6 +11,8 @@ body, html {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .contenedor-flexjoin iframe {
   width: 50%;
@@ -18,6 +20,25 @@ body, html {
 }
 .contenedor-flexjoin .contenido-textojoin {
   flex: 1;
+}
+
+.contenedor-flexjoin .contenido-textojoin  p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .contenedor-flexjoin {
@@ -37,6 +58,25 @@ h2 {
 
 h3 {
   color: #006d46 !important;
+}
+
+.contenedor-flex p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .navbar {
@@ -72,6 +112,7 @@ h3 {
 }
 
 .contenedor-flex {
+  padding: 20px;
   display: flex;
   align-items: center;
 }
@@ -97,9 +138,11 @@ h3 {
   background-color: rgba(122, 211, 190, 0.2);
   margin-bottom: 0;
   margin-top: 10px;
+  padding-left: 20px;
 }
 
 .services {
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, auto auto);
@@ -120,11 +163,32 @@ h3 {
 .services > div p {
   margin: 0;
 }
+.services {
+  animation-duration: 3s;
+  animation-name: wipe-in-down;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes wipe-in-down {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:down"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-down both;
+}
 
 @media screen and (max-width: 768px) {
   .services > div {
     grid-column: span 6;
   }
 }
+
+
 
 /*# sourceMappingURL=stylenew.css.map */
